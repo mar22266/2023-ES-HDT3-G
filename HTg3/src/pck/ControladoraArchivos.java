@@ -14,7 +14,7 @@ public class ControladoraArchivos {
     public void crearArchivo(){
         Integer[] listadenteros = new Integer[3000];
         for (int i = 0; i < listadenteros.length; i++) {
-            listadenteros[i] = random.nextInt();
+            listadenteros[i] = Math.abs(random.nextInt());
         }
 
         try {

@@ -140,7 +140,7 @@ public class Sorts<T> {
     private T ValorAlto(T[] array){
         T superior = array[0];
         for (int i = 1; i < array.length; i++) {
-            if (comparar.Compare(array[i], superior) > 0) {
+            if (comparar.Compare(superior, array[i]) == -1) {
                 superior = array[i];
             }
         }
@@ -155,12 +155,13 @@ public class Sorts<T> {
         int[] contador = new int[10];
         Arrays.fill(contador, 0);
 
-        for (i = 0; i < array.length; i++)
-            contador[((Integer) array[i] / x) % 10]++;
-
-        for (i = 1; i < 10; i++)
+        for (i = 0; i < array.length; i++){
+            Integer valor = (Integer) array[i];
+            contador[((valor / x ) % 10)]++;
+        }
+        for (i = 1; i < 10; i++) {
             contador[i] += contador[i - 1];
-
+        }
         for (i = array.length - 1; i >= 0; i--) {
             salida[contador[((Integer) array[i] / x) % 10] - 1] = (Integer) array[i];
             contador[((Integer) array[i] / x) % 10]--;
@@ -173,8 +174,8 @@ public class Sorts<T> {
     //radix sort ordenamiento
 
     public void radixSort(T[] array) {
-        T max = ValorAlto(array);
-        for (int x = 1; ((Integer) max / x) > 0; x *= 10)
+        Integer d = (Integer) ValorAlto(array);
+        for (int x = 1;  d/x > 0; x *= 10)
             contarOrdenar(array, x);
     }
 

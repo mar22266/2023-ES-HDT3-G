@@ -5,6 +5,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ControladoraArchivosTest {
 
+    /**
+     * @param metodo para crear un archivo
+     */
     @Test
     void crearArchivo() {
         ControladoraArchivos controladoraArchivos = new ControladoraArchivos();
@@ -12,6 +15,9 @@ class ControladoraArchivosTest {
 
     }
 
+    /**
+     * @param metodo para leer un archivo
+     */
     @Test
     void leerarchivo() {
         ControladoraArchivos controladoraArchivos = new ControladoraArchivos();
@@ -19,7 +25,9 @@ class ControladoraArchivosTest {
 
 
     }
-
+    /**
+     * @param metodo para actualizar un archivo
+     */
     @Test
     void ACtualizarArchivo() {
         ControladoraArchivos controladoraArchivos = new ControladoraArchivos();

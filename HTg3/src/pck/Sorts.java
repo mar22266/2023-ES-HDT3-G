@@ -4,13 +4,22 @@ import java.util.Arrays;
 
 public class Sorts<T> {
 
+    /**
+     * @param args the command line arguments
+     */
     public IComparador comparar;
 
+    /**
+     * @param args the command line arguments
+     */
     public Sorts(IComparador comparar){
         this.comparar = comparar;
     }
 
-    //ordenamiento buble sort
+    /**
+     * Mteodo de bubble sort para el ordenamieto de los datos
+     * @param array
+     */
 
     public void BubbleSort(T[] array){
         for (int i = 0; i < array.length - 1; i++) {
@@ -25,7 +34,10 @@ public class Sorts<T> {
     }
 
 
-    //gnome sort ordena
+    /**
+     * Metodo de gnome sort para el ordenamiento de los datos
+     * @param array
+     */
     public void gnomeSort(T[] array){
         int i = 0;
         while (i < array.length) {
@@ -46,7 +58,12 @@ public class Sorts<T> {
 
     }
 
-    //quick sort ordenamiento
+    /**
+     * Metodo de merge sort para el ordenamiento de los datos
+     * @param array
+     * @param a
+     * @param c
+     */
     public void quickSort(T[] array, int inf, int sup) {
         int i = inf - 1;
         int j = sup;
@@ -82,8 +99,13 @@ public class Sorts<T> {
     }
 
 
-
-    //merge sort ayuda
+    /**
+     * Metodo pruvado de merge sort para apoyo del ordenamiento de los datos
+     * @param array
+     * @param a
+     * @param b
+     * @param c
+     */
     private void unir(T[] array, int a, int b, int c){
         int n1 = b - a + 1;
         int n2 = c - b;
@@ -126,7 +148,12 @@ public class Sorts<T> {
 
     }
 
-    //merge sort ordena
+    /**
+     * Metodo de merge sort para el ordenamiento de los datos
+     * @param array
+     * @param a
+     * @param c
+     */
     public void mergeSort(T[] array, int a, int c){
         if (a < c) {
             int b = (a+c)/2;
@@ -136,7 +163,11 @@ public class Sorts<T> {
         }
     }
 
-    // Radix sort complemento
+    /**
+     * metodo privado radix sort para la ayuda de ordenamiento de los datos
+     * @param array
+     * @return
+     */
     private T ValorAlto(T[] array){
         T superior = array[0];
         for (int i = 1; i < array.length; i++) {
@@ -147,7 +178,11 @@ public class Sorts<T> {
         return superior;
     }
 
-    // Radix sort complemento
+    /**
+     * metodo radix sort privado para la ayuda de ordenamiento de los datos
+     * @param array
+     * @param x
+     */
 
     private void contarOrdenar(T[] array, int x) {
         Integer[] salida = new Integer[array.length];
@@ -171,7 +206,10 @@ public class Sorts<T> {
             array[i] = (T) salida[i];
     }
 
-    //radix sort ordenamiento
+    /**
+     * Metodo radix sort para el ordenamiento de los datos
+     * @param array
+     */
 
     public void radixSort(T[] array) {
         Integer d = (Integer) ValorAlto(array);

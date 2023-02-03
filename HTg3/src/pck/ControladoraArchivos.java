@@ -8,15 +8,22 @@ import java.util.Random;
  * ht3 - 2023
  */
 public class ControladoraArchivos {
-
+    /**
+     * @param args Crea datos random
+     */
     Random random = new Random();
 
+    /**
+     * @param args Crea un archivo con numeros random
+     */
     public void crearArchivo(){
         Integer[] listadenteros = new Integer[3000];
         for (int i = 0; i < listadenteros.length; i++) {
             listadenteros[i] = Math.abs(random.nextInt());
         }
-
+/**
+ * @param args Escribe los numeros random en el archivo
+ */
         try {
             File archivo = new File("Numeros.txt");
             archivo.createNewFile();
@@ -31,6 +38,9 @@ public class ControladoraArchivos {
 
             bw.write(DATA);
             bw.close();
+            /**
+             * @param args Si hay un error en la escritura del archivo
+             */
         }catch (Exception e) {
             System.out.println("Hubo un ERROR");
             e.printStackTrace();
@@ -38,13 +48,18 @@ public class ControladoraArchivos {
 
     }
 
+    /**
+     * @param args Lee el archivo
+     */
     public Integer[] leerarchivo(){
         Integer[] listadenteros = new Integer[3000];
 
         File archivo = null;
         FileReader reader = null;
         BufferedReader br = null;
-
+/**
+ * @param args Lee el archivo y lo guarda en un array
+ */
         try {
             archivo = new File("Numeros.txt");
             reader = new FileReader(archivo);
@@ -58,10 +73,15 @@ public class ControladoraArchivos {
                 i++;
             }
             return listadenteros;
+            /**
+             * @param args Si hay un error en la lectura del archivo
+             */
         }catch (Exception e) {
             System.out.println("Hubo un ERROR esaneando el archivo");
             e.printStackTrace();
-
+        /**
+         * @param args Cierra el archivo
+         */
         }finally {
             try {
                 if (null != reader) {
@@ -76,6 +96,9 @@ public class ControladoraArchivos {
 
     }
 
+    /**
+     * @param args Verifica si el archivo existe
+     */
     public Integer[] VerificarExistencia(){
         File archivo = new File("Numeros.txt");
 
@@ -87,6 +110,10 @@ public class ControladoraArchivos {
         }
     }
 
+    /**
+     * @param args Actualiza el archivo
+     * @param numeros
+     */
     public void ACtualizarArchivo(Integer[] numeros){
 
         try{
@@ -101,6 +128,9 @@ public class ControladoraArchivos {
 
             bw.write(DATA);
             bw.close();
+            /**
+             * @param args Si hay un error en la actualizacion del archivo
+             */
     }catch (Exception e) {
             System.out.println("Hubo un ERROR actualizando el archivo");
             e.printStackTrace();

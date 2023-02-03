@@ -6,6 +6,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SortsTest {
 
+    /**
+     * @param metodo para ordenar los datos
+     */
     @Test
     void bubbleSort() {
         Sorts sorts = new Sorts(new EnterosComparador());
@@ -22,7 +25,9 @@ class SortsTest {
         assertEquals(3, array[2]);
 
     }
-
+    /**
+     * @param metodo para ordenar los datos
+     */
     @Test
     void gnomeSort() {
         Sorts sorts = new Sorts(new EnterosComparador());
@@ -39,7 +44,9 @@ class SortsTest {
         assertEquals(3, array[2]);
 
     }
-
+/**
+     * @param metodo para ordenar los datos
+     */
     @Test
     void quickSort() {
         Sorts sorts = new Sorts(new EnterosComparador());
@@ -55,7 +62,9 @@ class SortsTest {
         assertEquals(2, array[1]);
         assertEquals(3, array[2]);
     }
-
+/**
+     * @param metodo para ordenar los datos
+     */
     @Test
     void mergeSort() {
         Sorts sorts = new Sorts(new EnterosComparador());
@@ -72,7 +81,9 @@ class SortsTest {
         assertEquals(3, array[2]);
 
     }
-
+/**
+     * @param metodo para ordenar los datos
+     */
     @Test
     void radixSort() {
         Sorts sorts = new Sorts(new EnterosComparador());

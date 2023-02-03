@@ -13,6 +13,9 @@ public class Main {
         Sorts ordenamientos = new Sorts(new EnterosComparador());
         ControladoraArchivos txt = new ControladoraArchivos();
         Integer[] listadenteros = txt.VerificarExistencia();
+        /**
+         * @param args Menu de opciones
+         */
 
         System.out.println("------Bienvenido al programa de ordenamiento------");
         Boolean salir = false;
@@ -43,6 +46,9 @@ public class Main {
                 }
             } while (salir);
                 switch (opcion) {
+                    /**
+                     * @param args Ordena por GnomeSort
+                     */
                     case 1:
                         System.out.println("Ordenando por GnomeSort");
                         for (int i = 10; i<= 3000; i+=299){
@@ -62,6 +68,9 @@ public class Main {
                         System.out.println("GNOMESORT TERMINADO");
                         break;
                     case 2:
+                        /**
+                         * @param args Ordena por MergeSort
+                         */
                         System.out.println("Ordenando por MergeSort");
                         for (int i = 10; i<= 3000; i+=299){
                             Integer[] listadenteros2 = new Integer[i];
@@ -79,6 +88,9 @@ public class Main {
                         System.out.println("MERGESORT TERMINADO");
                         break;
                     case 3:
+                        /**
+                         * @param args Ordena por QuickSort
+                         */
                         System.out.println("Ordenando por QuickSort");
                         for (int i = 10; i<= 3000; i+=299){
                             Integer[] listadenteros2 = new Integer[i];
@@ -97,6 +109,9 @@ public class Main {
                         System.out.println("QUICKSORT TERMINADO");
                         break;
                     case 4:
+                        /**
+                         * @param args Ordena por RadixSort
+                         */
                         System.out.println("Ordenando por RadixSort");
                         for (int i = 10; i<= 3000; i+=299){
                             Integer[] listadenteros2 = new Integer[i];
@@ -115,6 +130,9 @@ public class Main {
                         System.out.println("RADIXSORT TERMINADO");
                         break;
                     case 5:
+                        /**
+                         * @param args Ordena por BubbleSort
+                         */
                         System.out.println("Ordenando por BubbleSort");
                         for (int i = 10; i<= 3000; i+=299){
                             Integer[] listadenteros2 = new Integer[i];
@@ -132,6 +150,9 @@ public class Main {
                         break;
 
                     case 6:
+                        /**
+                         * @param args Ordena por InsertionSort
+                         */
                         ordenamientos.quickSort(listadenteros,0, listadenteros.length-1);
                         txt.ACtualizarArchivo(listadenteros);
                         System.out.println("Archivo actualizado, saliedno del programa...");

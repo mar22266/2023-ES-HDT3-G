@@ -5,6 +5,9 @@ package pck;
  * ht3 - 2023
  */
 public class EnterosComparador<T> implements IComparador<T> {
+    /**
+     * @param metodo de comparar datos
+     */
     @Override
     public int Compare(T object1, T object2) {
         int numero1 = Integer.parseInt(object1.toString());

@@ -55,7 +55,7 @@ public class Main {
                             for (int z: listadenteros2){
                                 System.out.println(z);
                             }
-                            System.out.println("Presione 1 luego enter para continuar el ordenamiento de " + i + " mas " + 599 + " numeros");
+                            System.out.println("Presione 1 luego enter para continuar el ordenamiento de " + i + " mas " + 299 + " numeros");
                             sc.nextInt();
                         }
 
@@ -73,7 +73,7 @@ public class Main {
                             for (int z: listadenteros2){
                                 System.out.println(z);
                             }
-                            System.out.println("Presione 1 luego enter para continuar el ordenamiento de " + i + " mas " + 599 + " numeros");
+                            System.out.println("Presione 1 luego enter para continuar el ordenamiento de " + i + " mas " + 299 + " numeros");
                             sc.nextInt();
                         }
                         System.out.println("MERGESORT TERMINADO");
@@ -90,7 +90,7 @@ public class Main {
                             for (int z: listadenteros2){
                                 System.out.println(z);
                             }
-                            System.out.println("Presione 1 luego enter para continuar el ordenamiento de " + i + " mas " + 599 + " numeros");
+                            System.out.println("Presione 1 luego enter para continuar el ordenamiento de " + i + " mas " + 299 + " numeros");
                             sc.nextInt();
                         }
 
@@ -108,7 +108,7 @@ public class Main {
                             for (int z: listadenteros2){
                                 System.out.println(z);
                             }
-                            System.out.println("Presione 1 luego enter para continuar el ordenamiento de " + i + " mas " + 599 + " numeros");
+                            System.out.println("Presione 1 luego enter para continuar el ordenamiento de " + i + " mas " + 299 + " numeros");
                             sc.nextInt();
                         }
 
@@ -126,7 +126,7 @@ public class Main {
                             for (int z: listadenteros2){
                                 System.out.println(z);
                             }
-                            System.out.println("Presione 1 luego enter para continuar el ordenamiento de " + i + " mas " + 599 + " numeros");
+                            System.out.println("Presione 1 luego enter para continuar el ordenamiento de " + i + " mas " + 299 + " numeros");
                             sc.nextInt();
                         }
                         break;

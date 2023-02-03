@@ -45,7 +45,7 @@ public class Main {
                 switch (opcion) {
                     case 1:
                         System.out.println("Ordenando por GnomeSort");
-                        for (int i = 5; i<= 3000; i+=599){
+                        for (int i = 10; i<= 3000; i+=299){
                             Integer[] listadenteros2 = new Integer[i];
                             for (int j=0; j<i;j++){
                                 listadenteros2[j]=listadenteros[j];
@@ -63,7 +63,7 @@ public class Main {
                         break;
                     case 2:
                         System.out.println("Ordenando por MergeSort");
-                        for (int i = 5; i<= 3000; i+=599){
+                        for (int i = 10; i<= 3000; i+=299){
                             Integer[] listadenteros2 = new Integer[i];
                             for (int j=0; j<i;j++){
                                 listadenteros2[j]=listadenteros[j];
@@ -80,7 +80,7 @@ public class Main {
                         break;
                     case 3:
                         System.out.println("Ordenando por QuickSort");
-                        for (int i = 5; i<= 3000; i+=599){
+                        for (int i = 10; i<= 3000; i+=299){
                             Integer[] listadenteros2 = new Integer[i];
                             for (int j=0; j<i;j++){
                                 listadenteros2[j]=listadenteros[j];
@@ -98,7 +98,7 @@ public class Main {
                         break;
                     case 4:
                         System.out.println("Ordenando por RadixSort");
-                        for (int i = 5; i<= 3000; i+=599){
+                        for (int i = 10; i<= 3000; i+=299){
                             Integer[] listadenteros2 = new Integer[i];
                             for (int j=0; j<i;j++){
                                 listadenteros2[j]=listadenteros[j];
@@ -116,7 +116,7 @@ public class Main {
                         break;
                     case 5:
                         System.out.println("Ordenando por BubbleSort");
-                        for (int i = 5; i<= 3000; i+=599){
+                        for (int i = 10; i<= 3000; i+=299){
                             Integer[] listadenteros2 = new Integer[i];
                             for (int j=0; j<i;j++){
                                 listadenteros2[j]=listadenteros[j];
